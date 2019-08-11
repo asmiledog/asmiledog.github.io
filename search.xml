@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[冒泡算法及优化]]></title>
+    <url>%2F2019%2F08%2F11%2F%E5%86%92%E6%B3%A1%E7%AE%97%E6%B3%95%E5%8F%8A%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[冒泡算法很重要！]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>冒泡算法</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[HelloWorld]]></title>
     <url>%2F2019%2F08%2F02%2FHelloWorld%2F</url>
     <content type="text"></content>
