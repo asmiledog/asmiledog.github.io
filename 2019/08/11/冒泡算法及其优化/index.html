@@ -130,19 +130,19 @@
 
 
 
-<meta name="description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0, n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必">
+<meta name="description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0，n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必然">
 <meta name="keywords" content="冒泡算法,优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="冒泡算法及优化">
 <meta property="og:url" content="https://www.asmiledog.cn/2019/08/11/冒泡算法及其优化/index.html">
 <meta property="og:site_name" content="追着云的狗">
-<meta property="og:description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0, n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必">
+<meta property="og:description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0，n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必然">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.asmiledog.cn/2019/08/11/冒泡算法及其优化/scan.png">
-<meta property="og:updated_time" content="2019-08-18T14:00:21.903Z">
+<meta property="og:updated_time" content="2019-08-19T02:36:48.521Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="冒泡算法及优化">
-<meta name="twitter:description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0, n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必">
+<meta name="twitter:description" content="在认识冒泡排序之前，我们先熟悉一下几个概念。 整体有序和局部有序​       首先我们熟悉一下什么叫局部有序 和整体有序。在由一组整数组成的序列A[0，n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &amp;lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必然">
 <meta name="twitter:image" content="https://www.asmiledog.cn/2019/08/11/冒泡算法及其优化/scan.png">
 
 
@@ -393,8 +393,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T22:00:21+08:00">
-                2019-08-18
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-19T10:36:48+08:00">
+                2019-08-19
               </time>
             
           </span>
@@ -496,7 +496,7 @@
 
       
         <p>在认识冒泡排序之前，我们先熟悉一下几个概念。</p>
-<h4 id="整体有序和局部有序"><a href="#整体有序和局部有序" class="headerlink" title="整体有序和局部有序"></a>整体有序和局部有序</h4><p>​       首先我们熟悉一下什么叫<strong><em>局部有序</em></strong> 和<strong><em>整体有序</em></strong>。在由一组整数组成的序列A[0, n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必然整体有序。</p>
+<h4 id="整体有序和局部有序"><a href="#整体有序和局部有序" class="headerlink" title="整体有序和局部有序"></a>整体有序和局部有序</h4><p>​       首先我们熟悉一下什么叫<strong><em>局部有序</em></strong> 和<strong><em>整体有序</em></strong>。在由一组整数组成的序列A[0，n - 1]中，满足A[i - 1] ≤ A[i]的相邻元素称作顺序的； 否则是逆序的。不难看出，有序序列中每一对相邻元素都是顺序的，亦即,对任意1 ≤ i &lt; n都 有A[i - 1] ≤ A[i]；反之，所有相邻元素均顺序的序列，也必然整体有序。</p>
 <h4 id="扫描交换"><a href="#扫描交换" class="headerlink" title="扫描交换"></a>扫描交换</h4><p>​       由有序序列的上述特征，我们可以通过不断改善局部的有序性实现整体的有序：从前向后依 次检查每一对相邻元素，一旦发现逆序即交换二者的位置。对于长度为n的序列，共需做n - 1 次比较和不超过n - 1次交换，这一过程称作一趟扫描交换。 </p>
 <p> <img src="/2019/08/11/冒泡算法及其优化/scan.png" alt></p>
 <p>​       以上图中由5个整数组成的序列A[0, 4] = { 6, 8, 5, 7, 4 }为例。 </p>
